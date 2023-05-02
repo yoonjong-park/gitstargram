@@ -13,3 +13,4 @@ yarn.lock
 .next
 .vscode
 next-env.d.ts
+.env.local
