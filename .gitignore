@@ -1,8 +1,15 @@
+# dependency
 node_modules
 
-
+## package manging
 package-lock.json
 
+## yarn
 .yarn
 .yarnrc.yml
 yarn.lock
+
+## personal
+.next
+.vscode
+next-env.d.ts
