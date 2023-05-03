@@ -8,7 +8,7 @@ const devOnlyPlugins = [getStartedPlugin()]
 
 export default defineConfig({
   name: 'default',
-  title: 'crimson-snake',
+  title: 'gitstargram',
 
   projectId: 'rh1f6xcs',
   dataset: 'production',

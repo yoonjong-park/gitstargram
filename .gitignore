@@ -14,3 +14,7 @@ yarn.lock
 .vscode
 next-env.d.ts
 .env.local
+.eslintrc.json
+.eslintrc.js
+.prettierrc.js
+
