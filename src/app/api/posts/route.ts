@@ -1,5 +1,5 @@
 import { authOptions } from "@/pages/api/auth/[...nextauth]";
-import { getUserByUsername } from "@/service/user";
+import { getFollowingPostsOf } from "@/service/posts";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 import { NextResponse } from "next/server";
@@ -12,5 +12,7 @@ export async function GET() {
     return new Response("Auth Error", { status: 401 });
   }
 
-  return getUserByUsername(user.username).then(data => NextResponse.json(data));
+  return getFollowingPostsOf(user.username).then(data =>
+    NextResponse.json(data),
+  );
 }
